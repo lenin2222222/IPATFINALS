@@ -1,0 +1,54 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.container h1 {
+    margin-left: 250px;
+}
+
+.item p {
+    margin: 5px 0;
+}
+
+.buttons1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 50px;
+}
+
+.buttons2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 50px;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button.edit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button.delete {
+    background-color: #f44336;
+    color: white;
+}

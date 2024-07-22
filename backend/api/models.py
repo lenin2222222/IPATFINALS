@@ -1,0 +1,36 @@
+from django.db import models
+
+
+class Item(models.Model):
+    first_name = models.CharField(max_length= 100)
+    middle_name = models.CharField(max_length= 100)
+    last_name= models.TextField(max_length= 100)
+    contact_no= models.TextField(max_length= 11)
+    email = models.EmailField(max_length= 100)
+    address = models.CharField(max_length= 100)
+    birthday = models.CharField(max_length= 100)
+    birthplace = models.CharField(max_length= 100)
+    gender = models.CharField(max_length= 100)
+    citizenship = models.CharField(max_length= 100)
+    residential_address = models.CharField(max_length= 100)
+    zipcode = models.CharField(max_length= 100)
+    permanent_address = models.CharField(max_length= 100)
+    civil_status = models.CharField(max_length= 100)
+    height = models.CharField(max_length= 100)
+    weight = models.CharField(max_length= 100)
+    blood_type = models.CharField(max_length= 100)
+    mother_firstname = models.CharField(max_length= 100)
+    mother_middlename = models.CharField(max_length= 100)
+    mother_lastname = models.CharField(max_length= 100)
+    mother_occupation = models.CharField(max_length= 100)
+    mother_no = models.CharField(max_length= 100)
+    father_firstname = models.CharField(max_length= 100)
+    father_middlename = models.CharField(max_length= 100)
+    father_lastname = models.CharField(max_length= 100)
+    father_occupation = models.CharField(max_length= 100)
+    father_no = models.CharField(max_length= 100)
+    sibling1 = models.CharField(max_length= 100)
+    sibling2 = models.CharField(max_length= 100)
+    sibling3 = models.CharField(max_length= 100)
+    def __str__(self):
+        return f"{self.first_name} {self.last_name}"
